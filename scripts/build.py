@@ -19,7 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 ENTRIES_DIR = ROOT / "entries"
 PUBLIC_DIR = ROOT / "docs"
-SITE_URL = "https://joshcullensantos.github.io/signal-log"  # Josh changes after GH pages setup
+SITE_URL = "https://joshcullen22.github.io/signal-log"  # Josh changes after GH pages setup
 SITE_TITLE = "Signal Log"
 SITE_BYLINE = "Josh Cullen Santos"
 
