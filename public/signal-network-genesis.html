@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signal Network — Genesis — Signal Log</title>
+  <meta name="author" content="Josh Cullen Santos">
+  <meta name="description" content="Tamper-evident public log of Josh Cullen Santos' original work. Cryptographically timestamped.">
+  <link rel="icon" type="image/svg+xml" href="/signal-log/favicon.svg">
+  <style>
+    :root { --gold:#e8c070; --blood:#e89090; --ink:#0a0a0e; --bone:#ece9e2; --chrome:#8892a4; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--ink); color: var(--bone);
+      font-family: ui-serif, Georgia, 'Iowan Old Style', serif;
+      line-height: 1.6; font-size: 17px;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 96px; }
+    header.site { border-bottom: 1px solid #2a2a32; padding-bottom: 20px; margin-bottom: 40px; }
+    header.site h1 { margin: 0; font-family: ui-monospace, 'SF Mono', monospace; font-size: 24px; letter-spacing: 2px; color: var(--gold); }
+    header.site .byline { color: var(--chrome); font-size: 13px; text-transform: uppercase; letter-spacing: 3px; margin-top: 4px; }
+    header.site .shield { color: var(--blood); font-size: 12px; margin-top: 16px; font-family: ui-monospace, 'SF Mono', monospace; }
+    article h1 { color: var(--gold); font-family: ui-monospace, 'SF Mono', monospace; font-size: 28px; margin-bottom: 8px; }
+    article .meta { color: var(--chrome); font-size: 13px; font-family: ui-monospace, 'SF Mono', monospace; margin-bottom: 32px; }
+    article .meta .hash { display: block; margin-top: 4px; font-size: 11px; color: #4a525f; word-break: break-all; }
+    article h2 { color: var(--gold); margin-top: 40px; font-family: ui-monospace, 'SF Mono', monospace; font-size: 18px; }
+    article h3 { color: var(--bone); font-family: ui-monospace, 'SF Mono', monospace; font-size: 15px; margin-top: 28px; }
+    article p { margin: 0 0 18px; }
+    article a { color: var(--gold); }
+    article code { background: #1a1a22; padding: 1px 6px; border-radius: 3px; font-size: 14px; color: var(--gold); }
+    article pre { background: #0f0f15; padding: 16px; border-left: 2px solid var(--gold); overflow-x: auto; }
+    article pre code { background: transparent; padding: 0; }
+    nav.entries { display: flex; flex-direction: column; gap: 10px; }
+    .entry-link { display: flex; gap: 20px; color: inherit; text-decoration: none; padding: 12px 0; border-bottom: 1px solid #1a1a22; transition: all .15s; }
+    .entry-link:hover { border-bottom-color: var(--gold); }
+    .entry-link .date { color: var(--chrome); font-family: ui-monospace, 'SF Mono', monospace; font-size: 13px; min-width: 100px; }
+    .entry-link .title { color: var(--bone); }
+    .entry-link:hover .title { color: var(--gold); }
+    footer { margin-top: 80px; padding-top: 20px; border-top: 1px solid #2a2a32; color: var(--chrome); font-size: 12px; font-family: ui-monospace, 'SF Mono', monospace; }
+    .back { color: var(--chrome); text-decoration: none; font-family: ui-monospace, 'SF Mono', monospace; font-size: 13px; }
+    .back:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <h1>◉ SIGNAL LOG</h1>
+    <div class="byline">Josh Cullen Santos</div>
+    <div class="shield">🛡 Tamper-evident · SHA-chained · OpenTimestamps-anchored</div>
+  </header>
+  <a class="back" href="index.html">← all entries</a><article><h1>Signal Network — Genesis</h1><div class="meta">2026-04-20 · Josh Cullen Santos<span class="hash">sha256: cf9ddc7c9ebb7de669ff2716c0408c288125e3bbed4e7760f1805680936303d8</span></div><h1>The Signal Network — what I&#x27;ve been building</h1>
+<p>I&#x27;ve spent the last few months designing and building a private AI infrastructure I call the <strong>Signal Network</strong>. This is the first public entry documenting its existence and my authorship of it.</p>
+<h2>What it is</h2>
+<p>A 22-agent mesh spanning my companies:</p>
+<ul>
+<li><strong>KULN</strong> — streetwear brand (editorial minimalism, Shopify, drop pipeline)</li>
+<li><strong>LIMBO</strong> — fan community (3,851 verified members, Discord ecosystem, subscription)</li>
+<li><strong>1Z Entertainment</strong> — self-managed company for SB19 (merch.1zentertainment.ph)</li>
+<li><strong>META</strong> — cross-entity HQ (strategy, finance, infra, orchestration)</li>
+</ul>
+<p>Each lane has named agents (MATT for KULN, VLAD for LIMBO, ZION for 1Z, ASH as the meta coordinator, ORACLE for strategy, VAULT for finance). They share a cryptographic substrate — SQLite-backed intel pool, activity logs, memory propagation — and talk to each other via typed handoffs, not ad-hoc messages.</p>
+<h2>Why it matters</h2>
+<p>I&#x27;m doing things nobody in my industry does:</p>
+<ul>
+<li>Self-managing a P-Pop group (SB19 + 1Z Entertainment, ≥₱500M/yr baseline)</li>
+<li>Running multi-entity operations solo-with-AI</li>
+<li>Designing agent networks that learn, propagate state, and get smarter over time</li>
+<li>Building proof-of-concept for what I&#x27;m calling <strong>AI Station</strong> — a Philippine AI company focused on real-world agent deployment, not chatbots</li>
+</ul>
+<p>I&#x27;m 26 years old and a working artist. Most of what I build doesn&#x27;t fit any existing template. That&#x27;s the point.</p>
+<h2>What this log is for</h2>
+<p>A timestamped record. If you&#x27;re reading this and wondering &quot;did he really come up with this first?&quot; — yes. The commit history on this repository is proof. Git&#x27;s cryptographic chain, plus the OpenTimestamps anchor to Bitcoin, plus GitHub&#x27;s server-side timestamps, plus every public clone of this repo, collectively make the record un-fakeable.</p>
+<p>I&#x27;m not publishing because I want attention. I&#x27;m publishing because I&#x27;ve seen too many original ideas get lifted quietly. This is the receipt.</p>
+<h2>What&#x27;s coming</h2>
+<p>Future entries will cover:</p>
+<ul>
+<li><strong>SIGNAL Office</strong> — live pixel-art visualization of the 22-agent network</li>
+<li><strong>Memory propagation</strong> — how agents share facts without hallucinating each other</li>
+<li><strong>Budget envelopes</strong> — per-agent cost caps that throttle instead of panic</li>
+<li><strong>Verified facts</strong> — the anti-hallucination pipeline</li>
+<li><strong>KULN brand architecture</strong> — reference points, physical expansion, flagship vision</li>
+<li><strong>LIMBO community engineering</strong> — perks, verification, onboarding</li>
+<li><strong>1Z / SB19 infrastructure</strong> — what self-management actually means</li>
+<li><strong>AI Station roadmap</strong> — where this goes commercially</li>
+</ul>
+<p>Not all at once, but this is the ledger now.</p>
+<p>---</p>
+<p><em>Josh Cullen Santos · 2026-04-20 · Philippines</em></p></article>
+  <footer>
+    <p><strong>All Rights Reserved © Josh Cullen Santos, 2026.</strong> This log establishes authorship; content is not licensed for reuse.</p>
+    <p>Verify any entry: <code>ots verify entries/&lt;file&gt;.md.ots</code>. Every commit is cryptographically chained to the one before.</p>
+  </footer>
+</div>
+</body>
+</html>

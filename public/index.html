@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Index — Signal Log</title>
+  <meta name="author" content="Josh Cullen Santos">
+  <meta name="description" content="Tamper-evident public log of Josh Cullen Santos' original work. Cryptographically timestamped.">
+  <link rel="icon" type="image/svg+xml" href="/signal-log/favicon.svg">
+  <style>
+    :root { --gold:#e8c070; --blood:#e89090; --ink:#0a0a0e; --bone:#ece9e2; --chrome:#8892a4; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--ink); color: var(--bone);
+      font-family: ui-serif, Georgia, 'Iowan Old Style', serif;
+      line-height: 1.6; font-size: 17px;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 96px; }
+    header.site { border-bottom: 1px solid #2a2a32; padding-bottom: 20px; margin-bottom: 40px; }
+    header.site h1 { margin: 0; font-family: ui-monospace, 'SF Mono', monospace; font-size: 24px; letter-spacing: 2px; color: var(--gold); }
+    header.site .byline { color: var(--chrome); font-size: 13px; text-transform: uppercase; letter-spacing: 3px; margin-top: 4px; }
+    header.site .shield { color: var(--blood); font-size: 12px; margin-top: 16px; font-family: ui-monospace, 'SF Mono', monospace; }
+    article h1 { color: var(--gold); font-family: ui-monospace, 'SF Mono', monospace; font-size: 28px; margin-bottom: 8px; }
+    article .meta { color: var(--chrome); font-size: 13px; font-family: ui-monospace, 'SF Mono', monospace; margin-bottom: 32px; }
+    article .meta .hash { display: block; margin-top: 4px; font-size: 11px; color: #4a525f; word-break: break-all; }
+    article h2 { color: var(--gold); margin-top: 40px; font-family: ui-monospace, 'SF Mono', monospace; font-size: 18px; }
+    article h3 { color: var(--bone); font-family: ui-monospace, 'SF Mono', monospace; font-size: 15px; margin-top: 28px; }
+    article p { margin: 0 0 18px; }
+    article a { color: var(--gold); }
+    article code { background: #1a1a22; padding: 1px 6px; border-radius: 3px; font-size: 14px; color: var(--gold); }
+    article pre { background: #0f0f15; padding: 16px; border-left: 2px solid var(--gold); overflow-x: auto; }
+    article pre code { background: transparent; padding: 0; }
+    nav.entries { display: flex; flex-direction: column; gap: 10px; }
+    .entry-link { display: flex; gap: 20px; color: inherit; text-decoration: none; padding: 12px 0; border-bottom: 1px solid #1a1a22; transition: all .15s; }
+    .entry-link:hover { border-bottom-color: var(--gold); }
+    .entry-link .date { color: var(--chrome); font-family: ui-monospace, 'SF Mono', monospace; font-size: 13px; min-width: 100px; }
+    .entry-link .title { color: var(--bone); }
+    .entry-link:hover .title { color: var(--gold); }
+    footer { margin-top: 80px; padding-top: 20px; border-top: 1px solid #2a2a32; color: var(--chrome); font-size: 12px; font-family: ui-monospace, 'SF Mono', monospace; }
+    .back { color: var(--chrome); text-decoration: none; font-family: ui-monospace, 'SF Mono', monospace; font-size: 13px; }
+    .back:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <h1>◉ SIGNAL LOG</h1>
+    <div class="byline">Josh Cullen Santos</div>
+    <div class="shield">🛡 Tamper-evident · SHA-chained · OpenTimestamps-anchored</div>
+  </header>
+  <h2 style='color: var(--chrome); font-family: ui-monospace, monospace; font-size: 14px; letter-spacing: 2px;'>ENTRIES</h2>
+  <footer>
+    <p><strong>All Rights Reserved © Josh Cullen Santos, 2026.</strong> This log establishes authorship; content is not licensed for reuse.</p>
+    <p>Verify any entry: <code>ots verify entries/&lt;file&gt;.md.ots</code>. Every commit is cryptographically chained to the one before.</p>
+  </footer>
+</div>
+</body>
+</html>

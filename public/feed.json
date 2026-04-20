@@ -1,0 +1,21 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Signal Log",
+  "home_page_url": "https://joshcullensantos.github.io/signal-log",
+  "feed_url": "https://joshcullensantos.github.io/signal-log/feed.json",
+  "authors": [
+    {
+      "name": "Josh Cullen Santos"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://joshcullensantos.github.io/signal-log/signal-network-genesis.html",
+      "url": "https://joshcullensantos.github.io/signal-log/signal-network-genesis.html",
+      "title": "Signal Network \u2014 Genesis",
+      "date_published": "2026-04-20T00:00:00Z",
+      "content_text": "# The Signal Network \u2014 what I've been building\n\nI've spent the last few months designing and building a private AI infrastructure I call the **Signal Network**. This is the first public entry documenting its existence and my authorship of it.\n\n## What it is\n\nA 22-agent mesh spanning my companies:\n\n- **KULN** \u2014 streetwear brand (editorial minimalism, Shopify, drop pipeline)\n- **LIMBO** \u2014 fan community (3,851 verified members, Discord ecosystem, subscription)\n- **1Z Entertainment** \u2014 self-managed ",
+      "_sha256": "cf9ddc7c9ebb7de669ff2716c0408c288125e3bbed4e7760f1805680936303d8"
+    }
+  ]
+}
