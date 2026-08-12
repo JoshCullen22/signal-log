@@ -33,6 +33,40 @@ The result: for any entry on this site, there is mathematical proof of **the lat
 - Deployed via GitHub Pages on push to `main`
 - Each entry gets an OpenTimestamps `.ots` file anchoring its hash to Bitcoin
 
+## Pulling source material from Telegram
+
+A lot of the raw thinking that belongs in this log starts as Telegram messages.
+`scripts/telegram_fetch.py` reads them back out of your own account via
+[Telethon](https://docs.telethon.dev) so they can be edited into an entry.
+
+```bash
+pip install telethon
+export TG_API_ID=123456          # https://my.telegram.org -> API development tools
+export TG_API_HASH=0123abc...
+python3 scripts/telegram_fetch.py --login          # once — Telegram sends a login code
+```
+
+Then:
+
+```bash
+python3 scripts/telegram_fetch.py --list-chats                     # find the exact chat
+python3 scripts/telegram_fetch.py --peer Casey --search cleanup    # search one chat
+python3 scripts/telegram_fetch.py --peer Casey --from-me --since 2026-06-01
+python3 scripts/telegram_fetch.py --peer Casey --json --out casey.json
+```
+
+**Run it locally, not in CI.** Telegram's MTProto handshake does not complete
+from the sandboxed build/agent containers, the first login is interactive, and
+the session has to survive between runs — none of which an ephemeral container
+gives you.
+
+**The session file is a credential.** Anyone holding it can read the account.
+It is written to `.telegram/`, which `.gitignore` excludes along with `*.session`.
+Never commit it.
+
+If `pip install telethon` fails building the `pyaes` wheel, install with
+`pip install --no-build-isolation telethon`.
+
 ## License
 
 **All Rights Reserved, Josh Cullen Santos, 2026-.**
