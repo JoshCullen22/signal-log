@@ -4,3 +4,8 @@ __pycache__/
 *.pyc
 .venv/
 node_modules/
+
+# Telegram session files are credentials — never commit them
+.telegram/
+*.session
+*.session-journal
